@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Faceit Analyzer",
+    "version": "1.0",
+    "description": "Analyzes Faceit CS2 match win probabilities",
+    "permissions": [
+      "storage"
+    ],
+    "host_permissions": [
+      "https://www.faceit.com/*",
+      "http://localhost:3000/*",
+      "https://open.faceit.com/*"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    }
+  }

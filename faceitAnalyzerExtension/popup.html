@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FaceIT Analyzer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="logo.png" alt="FaceIT Analyzer Logo" class="logo">
+    </header>
+    <div class="content-wrapper">
+      <div class="form-container">
+        <form id="analyzerForm">
+          <div class="input-field">
+            <label for="nickname">FACEIT Nickname</label>
+            <input type="text" id="nickname" placeholder="Enter FaceIT Nickname">
+            <div class="error" id="nicknameError"></div>
+          </div>
+          <div class="input-field">
+            <label for="matchUrl">Match URL</label>
+            <input type="text" id="matchUrl" placeholder="Enter Match Page URL">
+            <div class="error" id="matchUrlError"></div>
+          </div>
+          <div class="button-group">
+            <button type="submit">Analyze Match</button>
+          </div>
+        </form>
+        <div id="status">Ready</div>
+      </div>
+      <div class="results-container hidden">
+        <table id="resultsTable">
+          <thead>
+            <tr>
+              <th>Map</th>
+              <th>Win Probability</th>
+            </tr>
+          </thead>
+          <tbody id="resultsBody"></tbody>
+        </table>
+        <div class="button-group">
+          <button id="analyzeAnother">Analyze Another Match</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
