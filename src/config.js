@@ -1,6 +1,6 @@
 const MAP_POOL = [
   "Ancient",
-  "Anubis",
+  "Overpass",
   "Dust2",
   "Inferno",
   "Mirage",
